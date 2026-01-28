@@ -13,8 +13,9 @@ export default function GoalSetter({ goal, setGoal, progress, completed }: GoalS
       <label className="block text-sm font-medium mb-2">Session Goal</label>
       <input
         type="number"
+        min="1"
         value={goal}
-        onChange={(e) => setGoal(parseInt(e.target.value) || 0)}
+        onChange={(e) => setGoal(Math.max(1, parseInt(e.target.value) || 1))}
         className="w-full p-2 border rounded dark:bg-gray-800 dark:border-gray-600 dark:text-white"
       />
       <div className="mt-2">

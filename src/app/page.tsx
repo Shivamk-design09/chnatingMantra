@@ -12,7 +12,7 @@ export default function Home() {
   const { todayCount, history, addChant } = useDailyStats();
   const [count, setCount] = useState(0);
   const [mantra, setMantra] = useState('Om Namah Shivaya');
-  const [goal, setGoal] = useState(108);
+  const [goal, setGoal] = useState(1);
   const [remaining, setRemaining] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
 
@@ -60,5 +60,5 @@ export default function Home() {
         <Stats todayCount={todayCount} history={history} />
       </div>
     </div>
-  );
+  );x
 }
