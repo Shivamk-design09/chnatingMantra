@@ -60,5 +60,5 @@ export default function Home() {
         <Stats todayCount={todayCount} history={history} />
       </div>
     </div>
-  );x
+  );
 }
